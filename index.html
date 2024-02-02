@@ -1,32 +1,36 @@
 <html>
-    <head><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css">
-        <link rel="stylesheet" href="index.css">
-    </head>
-    <body>
-        <div class="container">
-            <div class="score">
-                <h3>HOME</h3>
-                <h2 class="points" id="home-score">0</h2>
-                <div class="score-btns">
-                    <button onclick="addHomePoints(1)" class="btn">+1</button>
-                    <button onclick="addHomePoints(2)" class="btn">+2</button>
-                    <button onclick="addHomePoints(3)" class="btn">+3</button>
-                </div>
-            </div>
-            
-            <div class="score">
-                <h3>GUEST</h3>
-                <h2 class="points" id="guest-score">0</h2>
-                <div class="score-btns">
-                    <button onclick="addGuestPoints(1)" class="btn">+1</button>
-                    <button onclick="addGuestPoints(2)" class="btn">+2</button>
-                    <button onclick="addGuestPoints(3)" class="btn">+3</button>
-                </div>
-            </div>
+  <head>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css"
+    />
+    <link rel="stylesheet" href="index.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="score">
+        <h3>HOME</h3>
+        <h2 class="points" id="home-score">0</h2>
+        <div class="score-btns">
+          <button onclick="addHomePoints(1)" class="btn">+1</button>
+          <button onclick="addHomePoints(2)" class="btn">+2</button>
+          <button onclick="addHomePoints(3)" class="btn">+3</button>
         </div>
-        <div>
-            <button class="new-btn" onclick="newGame()">New Game</button>
+      </div>
+
+      <div class="score">
+        <h3>AWAY</h3>
+        <h2 class="points" id="guest-score">0</h2>
+        <div class="score-btns">
+          <button onclick="addGuestPoints(1)" class="btn">+1</button>
+          <button onclick="addGuestPoints(2)" class="btn">+2</button>
+          <button onclick="addGuestPoints(3)" class="btn">+3</button>
         </div>
-        <script src="index.js"></script>
-    </body>
+      </div>
+    </div>
+    <div>
+      <button class="new-btn" onclick="newGame()">New Game</button>
+    </div>
+    <script src="index.js"></script>
+  </body>
 </html>
